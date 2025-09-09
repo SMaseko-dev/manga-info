@@ -1,0 +1,213 @@
+body{
+    width: 100%;
+    height: 45rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.sidebar{
+    display: grid;
+    grid-template-rows: 5rem 10rem auto;
+    height: 45rem;
+    border:  1px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    background-color: lightblue;
+}
+
+.logo p{
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li{
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.sidebar ul li:hover{
+    background-color: white;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+    height: 43rem;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    border-bottom: 1px solid lightblue;
+    background-color: white;
+}
+
+.searchbar-container-box{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.searchbar-section{
+    width: 35rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid lightblue;
+    border-radius: 1rem;
+}
+
+.searchbar-section input[type="button"]{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.searchbar-section input[type="button"]:onclick{
+    background-color: lightblue;
+}
+
+.searchbar-section input[type="text"]{
+    border: none;
+    width: 30rem;
+    font-size: 1rem;
+    outline: none;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.1rem;
+}
+
+.img-container{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.img-container img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    font-size: 1rem;
+}
+
+.content-container{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 0.5rem;
+    height: 36.5rem;
+}
+
+.manga-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.image-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-section img{
+    width: 5rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.manga-card{
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+    border-radius: 0.5rem;
+    width: 9rem;
+    height: 11rem;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 1px 1px 5px lightblue;
+    font-size: 0.83rem;
+    overflow: auto;
+    padding-top: 0.2rem;
+}
+
+.manga-card p{
+    text-align: center;
+}
+
+.sidecontent{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.suggestion-section, .new-manga-section{
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-rows: 2rem auto;
+    height: 17rem;
+    box-shadow: 1px 1px 5px lightblue;
+}
+
+.title-container, .new-manga-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suggestion-card, .new-manga-card{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.suggestion-card-container, .new-manga-card-container{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    overflow: auto;
+}
+
+.suggestion-card img, .new-manga-card img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.suggestion-card p, .new-manga-card p{
+    align-self: center;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid black;
+}
+
