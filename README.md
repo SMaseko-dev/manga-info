@@ -17,4 +17,4 @@ This app integrates with the AniList GraphQL API to fetch real-time manga data, 
 
 Frontend: JavaScript, HTML, CSS
 
-API: AniList GraphQL API
+API: [AniList GraphQL API](https://anilist.gitbook.io/anilist-apiv2-docs/)
